@@ -43,10 +43,6 @@ h2#main-head-title span#prefix {
     color: #000;
 }
 
-content {
-
-}
-
 #container ul#nav {
     display: flex;
     align-items: center;
@@ -87,6 +83,25 @@ content {
 
 #container #main img:hover {
     opacity: 100%;
+}
+
+
+ul#project-container {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.project {
+    background-color:#0f1630;
+    margin-left: 25px;
+    padding: .5em;
+    text-align: left;
+}
+
+span.title {
+    font-size: 32px;
+    color: #ffa;
 }
 
 
@@ -145,6 +160,7 @@ a:visited
 {
     color: #fff;
 }
+
 
 
 footer
