@@ -1,7 +1,7 @@
 body
 {
     background: #0f1630;
-    margin: 0px auto;
+    margin: auto;
     text-align: center;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
@@ -61,8 +61,8 @@ content {
 }
 
 #container #main {
+    
     margin: auto;
-    width: 50%;
     text-align: center;
     padding: 2px;
     color: #7354ff;
@@ -72,14 +72,46 @@ content {
 
 #container #main img {
     opacity: 50%;
+    width: 90px;
+    height: 90px;
+}
+
+#container #main p {
+    font-size: 24px;
+    color: #fff;
+}
+
+#container #main p img {
+    padding-right: 2%;
 }
 
 #container #main img:hover {
     opacity: 100%;
 }
 
+
+.exp-list {
+    display: flex;
+    justify-content: center;
+}
+
+.exp-list img {
+    display: block;
+ }
+
+.exp-list img:first-child {
+    margin-right: 16px;
+}
+
+
 #container ul#nav li a {
     font-family: 'Josefin Sans';
+}
+
+#container #main li p {
+    font-size: 24px;
+    color: #fff;
+    text-align: left;
 }
 
 h2#experience {

@@ -1,15 +1,28 @@
 <!doctype html>
 <html>
     <head>
-        <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/webfont/1.6.28/webfontloader.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js"></script>"
+        <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+        <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
         <script>
             WebFont.load({
               google: {
-                families: ['Merriweather','Caveat','Amatic SC','Indie Flower','Kanit', 'Josefin Sans']
+                families: ['Merriweather','Caveat','Source Sans Pro','Amatic SC','Indie Flower','Kanit', 'Josefin Sans']
               }
             });
+
+            function loadHTML(v){
+                fetch("pages/" + v)
+                .then(response=> alert(response.text()) )
+                .then(text=> document.getElementById('container').innerHTML = text);
+            }
+
+            window.onload=function() {
+                var page = location.hash.substring(1);
+                loadHTML(v + ".html");
+            }
+
           </script>
         
         <link rel="stylesheet" type="text/css" href="./style.css" />
@@ -24,32 +37,45 @@
         <div id="container">
             <ul id="nav">
                 <li><a href="#projects">Projects</a></li>
+                <li><a href="#nootropics">Nootropics</a></li>
                 <li><a href="#crypto">Cryptography</a></li>
+                <li><a href="#hacking">Hacking</a></li>
+                <li><a href="#hobbies">Hobbies</a></li>
             </ul>
 
             <div id="main">
                 <div style="text-align: center;">
-                    <img width="90" height="90" src="img/ethereum.png">
-                    <img width="90" height="90" src="img/python.png">
-                    <img width="90" height="90" src="img/golang.png">
-                    <img width="90" height="90" src="img/javascript.png">
+                    <img src="img/ethereum.png">
+                    <img src="img/python.png">
+                    <img src="img/golang.png">
+                    <img src="img/javascript.png">
                 </div>
-
-                <span id="me">I am a self-taught programmer and hacker, been programming since I was a child and am obsessed with Ethereum!</span>
-                <ul>
-                    <li>Smart Contract Development and Auditing</li>
+                <div style="background-color: #101324; padding-top: 1%; min-height: 100vh;">
+                <span id="me"></span>
+                <ul><i class="fas fa-tools"></i>
+                    <li>Blockchain & Full Stack</li>
+                    <ul class="exp-list">
+                        <li><img src="img/truffle.png"></li>
+                        <li> <img src="img/ganache.png"></li>
+                        <li><img style="width: 100px;" src="img/react.png" /></li>
+                        <li> <p style="font-family: 'Source Sans Pro';">Since 2017</p></li>
+                    </ul>
                 </ul>
                 </div>
+            </div>
             </div>
         </div>
         </content>
         <footer>
+            <div>
+                
+            </div>
             <div style="padding-right: 5px">
-                ETH: 0x2DD8eA56625756DADd90cac70d5EcD433E7A5de9
+                ETH: 0x894897347FdD28dED44aD64D145bBB58bD807F56
             </div>
             <div>
-                <a href=""><i class="fa-solid fa-tree"></i></a>
-                <a href=""><i class="fa-brands fa-github"></i></a>
+                <a href="https://linktr.ee/0xneuro"><img width="16" height="16" src="img/linktree.png" /></a>
+                <a href="https://github.com/0xNeuro"><i class="fa-brands fa-github"></i></a>
             </div>
         </footer>
     </body>
