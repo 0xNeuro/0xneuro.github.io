@@ -1,38 +1,55 @@
 <!doctype html>
 <html>
     <head>
+        <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/webfont/1.6.28/webfontloader.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js"></script>"
+        <script>
+            WebFont.load({
+              google: {
+                families: ['Merriweather','Caveat','Amatic SC','Indie Flower','Kanit', 'Josefin Sans']
+              }
+            });
+          </script>
+        
         <link rel="stylesheet" type="text/css" href="./style.css" />
-        <title>Alex Bryant - Resume/CV</title>
+        <title>0xNeuro</title>
     </head>
     <body>
         <header>
-            <span id="full-stack-head">Full Stack Developer</span>
+            <h2 id="main-head-title"><span id="prefix">0x</span>neuro</h2>
+            <span id="tagline">Buzzin' from the mushroom coffee!</span>
         </header>
         <content>
         <div id="container">
             <ul id="nav">
-                <li>Minimalism</li>
-                <li>Mushroom Coffee</li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#crypto">Cryptography</a></li>
             </ul>
+
             <div id="main">
-                <h2>Blockchain</h2>
-                <p>I've been experimenting with several Blockchain technologies since around 2017.</p>
-                <div class="github">
-                    <div class="box">
-                        
-                    </div>
+                <div style="text-align: center;">
+                    <img width="90" height="90" src="img/ethereum.png">
+                    <img width="90" height="90" src="img/python.png">
+                    <img width="90" height="90" src="img/golang.png">
+                    <img width="90" height="90" src="img/javascript.png">
+                </div>
+
+                <span id="me">I am a self-taught programmer and hacker, been programming since I was a child and am obsessed with Ethereum!</span>
+                <ul>
+                    <li>Smart Contract Development and Auditing</li>
+                </ul>
                 </div>
             </div>
         </div>
         </content>
         <footer>
-            <div id=""left-foot">
+            <div style="padding-right: 5px">
                 ETH: 0x2DD8eA56625756DADd90cac70d5EcD433E7A5de9
             </div>
-            <div id="right-foot">
-                <a href="https://linktr.ee/0xneuro">Linktree</a>
-                <a href="">GitHub</a>
-                <a href="emailto:alex.bryant.dev@gmail.com">Email</a>
+            <div>
+                <a href=""><i class="fa-solid fa-tree"></i></a>
+                <a href=""><i class="fa-brands fa-github"></i></a>
             </div>
         </footer>
     </body>
