@@ -1,4 +1,0 @@
-0xneuro header title
-
-projects:
-each container has the title head and a link to a whole page for the project.
