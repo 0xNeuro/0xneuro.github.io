@@ -179,3 +179,11 @@ footer *
 {
     padding: 1px;
 }
+
+ul.hobby-list li {
+    color: #ffa;
+}
+
+a.link-active {
+    color: #ffa;
+}

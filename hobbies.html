@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
     <head>
-        <link rel="stylesheet" type="text/css" href="https://0xneuro.github.io/style.css" />
+        <link rel="stylesheet" type="text/css" href="./style.css" />
         <meta http-equiv="Cache-Control" content="no-store" />
         <script src="https://cdnjs.cloudflare.com/ajax/libs/webfont/1.6.28/webfontloader.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js"></script>"
@@ -20,15 +20,15 @@
     </head>
     <body>
         <header>
-            <h2 id="main-head-title"><span id="prefix">0x</span>neuro</h2>
+            <h2 id="main-head-title"><a href="index.html"><span id="prefix">0x</span>neuro</a></h2>
             <span id="tagline">Buzzin' from the mushroom coffee!</span>
         </header>
         <content>
         <div id="container">
             <ul id="nav">
-                <li><a href="#crypto">Cryptography</a></li>
-                <li><a href="#hacking">Hacking</a></li>
-                <li><a href="hobbies.html">Hobbies</a></li>
+                <li><a href="crypto.html">Cryptography</a></li>
+                <li><a href="hacking.html">Hacking</a></li>
+                <li><a href="hobbies.html" class="link-active">Hobbies</a></li>
             </ul>
 
             <div id="main">
@@ -37,12 +37,18 @@
                     <img src="img/python.png">
                     <img src="img/golang.png">
                     <img src="img/javascript.png">
+                    <img src="img/docker.png">
                 </div>
                 <div style="background-color: #101324; padding-top: 1%; min-height: 100vh;">
                 <span id="me"></span>
-                <h2>Hobbies</h2>
-                <p>Drinking coffee</p>
-                </div>
+                <ul class="hobby-list">
+                    <li>Mapping</li>
+                    <li>Game Modding</li>
+                    <li>
+                        <a href="garrysmod.html"><img width="90" height="90" src="img/gmod.png" /></a>
+                        <img src="img/lua.png" /></li>
+                </ul>
+            </div>
             </div>
             </div>
         </div>
