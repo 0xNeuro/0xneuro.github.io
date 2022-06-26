@@ -1,9 +1,13 @@
-body
+body, body#garrysmod
 {
     background: #0f1630;
     margin: auto;
     text-align: center;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body#garrysmod {
+    background: #0048ff;
 }
 
 header {
@@ -38,8 +42,8 @@ span#tagline {
     color: #fff;
 }
 
-h2#main-head-title span#prefix {
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+span#prefix {
+    font-family:'Times New Roman';
     color: #000;
 }
 
